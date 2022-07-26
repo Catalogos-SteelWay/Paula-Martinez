@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-caja;
     font-family: 'Edu TAS Beginner', cursive;
     font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
@@ -139,16 +139,15 @@ ul li a {
     } 
 
 
-    .texto{
-        display: block;
+    /*.texto{
+        /*display: block;
         width: 100%;
         padding: 3px 0;
         background: #2d3350;
         border-radius: 3px;
         color:white;
         text-align: center;
-        text-decoration: none;
-    }
+        text-decoration: none;*/
 
     .img-content{
         display: block;
@@ -184,7 +183,6 @@ ul li a {
 
 @media (min-width: 700px) {
     .producto-item:hover .texto{
-    padding: 30px;
     opacity: 1;
     }
 }
@@ -227,7 +225,7 @@ ul li a {
     width: 100%;
     background-color: #0a141d;
 }
-.pie-pagina .grupo-1{
+.pie-pagina .content{
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -236,26 +234,27 @@ ul li a {
     grid-gap:50px;
     padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure{
+.pie-pagina .content .caja figure{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
-    width: 100px;
+.pie-pagina .content .caja figure img{
+    width: 250px;
 }
-.pie-pagina .grupo-1 .box h2{
+.pie-pagina .content .caja h2{
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+.pie-pagina .content .caja p{
     color: #efefef;
     margin-bottom: 10px;
+    font-size: 18px;
 }
-.pie-pagina .grupo-1 .red-social a{
+.pie-pagina .content .red-social a{
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -267,7 +266,7 @@ ul li a {
     text-align: center;
     transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+.pie-pagina .content .red-social a:hover{
     color: aqua;
 }
 .pie-pagina .grupo-2{
@@ -280,7 +279,7 @@ ul li a {
     font-size: 15px;
 }
 @media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
+    .pie-pagina .content{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
